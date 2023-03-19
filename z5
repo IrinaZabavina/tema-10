@@ -1,0 +1,13 @@
+def generator(n):
+    spisok = []
+    for x in range(0, n + 1):
+        if x == 0:
+            spisok.append(-10)
+        elif x % 3:
+             spisok.append(45)
+        elif x % 5:
+            spisok.append((x/5)+93)
+        else:
+            spisok.append(x/2)
+    return spisok
+print(generator(7))
