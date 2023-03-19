@@ -1,0 +1,4 @@
+X = [2, 3, 4]
+Y = [10, 11, 12]
+stepen = list(map(lambda x, y: x ** y, X, Y))
+print(stepen)
