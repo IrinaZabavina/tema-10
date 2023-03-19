@@ -1,0 +1,3 @@
+slova = ['Tina','Raj','Tom']
+dlina = list(map(lambda x: len(x), slova))
+print(dlina)
