@@ -1,0 +1,12 @@
+def largest_histogram(lenght): #length - значение каждого столбца (ширины)
+    temp = []
+    n = len(lenght) #количество элементов
+    for index, width in enumerate(lenght):
+        for i in range(index+1, n): #от 1 до n-го элемента
+            x = lenght[index: i+1]
+            temp.append(len(x)* min(x))
+            print(temp)
+
+    print(max(temp))
+
+largest_histogram([2, 1, 4, 5, 1, 3, 3])
